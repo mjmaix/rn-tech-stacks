@@ -8,7 +8,8 @@
     "test": "npm run tslint && npm run tsc-test && npm run jest",
     "tslint": "./node_modules/.bin/tslint --project .",
     "tsc-test": "./node_modules/.bin/tsc --project . --noEmit",
-    "jest": "./node_modules/.bin/jest"
+    "jest": "./node_modules/.bin/jest",
+    "jest:update": "./node_modules/.bin/jest --updateSnapshot"
   },
   "dependencies": {
     "expo": "^32.0.0",
