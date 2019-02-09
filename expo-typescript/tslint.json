@@ -2,6 +2,8 @@
   "extends": ["tslint:recommended", "tslint:latest", "tslint-config-prettier", "tslint-config-airbnb"],
   "rules": {
     "prettier": true,
-    "no-implicit-dependencies": [true, "dev"]
+    "no-implicit-dependencies": [true, "dev"],
+    "variable-name": [true, "allow-pascal-case"],
+    "max-line-length": [true, { "limit": 120, "ignore-pattern": "//" }]
   }
 }
