@@ -1,9 +1,13 @@
-import React from "react";
+import * as React from "react";
 
-import AppNav from "./AppNav";
+import AppNavigator from "./AppNav";
 
 export default class App extends React.Component<{}> {
   public render() {
-    return <AppNav />;
+    return (
+      <ThemeProvider>
+        <AppNavigator />
+      </ThemeProvider>
+    );
   }
 }
