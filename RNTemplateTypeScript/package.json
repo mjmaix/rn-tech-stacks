@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "prettier:format": "npx prettier fix '**/*.ts[x]'"
   },
   "dependencies": {
     "react": "16.8.3",
@@ -20,9 +21,9 @@
     "babel-jest": "^24.5.0",
     "jest": "^24.5.0",
     "metro-react-native-babel-preset": "^0.53.1",
+    "prettier": "^1.16.4",
     "prettier-tslint": "^0.4.2",
     "react-test-renderer": "16.8.3",
-    "tslint-config-airbnb": "^5.11.1",
     "typescript": "^3.3.3333"
   },
   "jest": {
