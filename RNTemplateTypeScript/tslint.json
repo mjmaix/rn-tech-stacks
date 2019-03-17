@@ -1,3 +1,7 @@
 {
-  "extends": "tslint:recommended"
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "rules": {
+    "strict": true,
+    "object-literal-sort-keys": false
+  }
 }
