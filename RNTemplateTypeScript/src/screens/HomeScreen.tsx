@@ -9,13 +9,11 @@ class HomeScreen extends React.Component<IHomeScreenProps> {
     return (
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
         <Text>Home Screen</Text>
-        <Button
-          title="Go to Details"
-          onPress={() => this.props.navigation.navigate("Details")}
-        />
+        <Button title="Go to Details" onPress={this.onPressGoToDetails} />
       </View>
     );
   }
+  private onPressGoToDetails = () => this.props.navigation.navigate("Details");
 }
 
 export default HomeScreen;

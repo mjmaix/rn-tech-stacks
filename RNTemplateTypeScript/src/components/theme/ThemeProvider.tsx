@@ -7,7 +7,7 @@ interface ISubPal {
   secondary: string;
 }
 
-type ITheme = {
+export type ITheme = {
   palette: ISubPal & IPalette;
 } & IStyleGuide;
 
@@ -19,7 +19,7 @@ interface IThemeProviderState {
   theme: ITheme;
 }
 
-const ThemeContext = React.createContext({});
+export const ThemeContext = React.createContext({});
 
 class ThemeProvider extends React.Component<
   IThemeProviderProps,
