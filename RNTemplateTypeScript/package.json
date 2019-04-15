@@ -1,37 +1,51 @@
 {
-  "name": "RNTemplateTypeScript",
+  "name": "ChatAndVideoApp",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "prettier:format": "npx prettier fix '**/*.ts[x]'"
+    "lint": "tslint --project tsconfig.json"
   },
   "dependencies": {
     "react": "16.8.3",
-    "react-native": "0.59.1",
-    "react-native-gesture-handler": "^1.0.17",
-    "react-navigation": "^3.4.1",
-    "utility-types": "^3.4.1"
+    "react-native": "0.59.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/runtime": "^7.3.4",
+    "@babel/core": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
     "@types/jest": "^24.0.11",
-    "@types/react": "^16.8.8",
-    "@types/react-native": "^0.57.40",
+    "@types/react": "^16.8.13",
+    "@types/react-native": "^0.57.43",
     "@types/react-test-renderer": "^16.8.1",
-    "babel-jest": "^24.5.0",
-    "jest": "^24.5.0",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1",
     "metro-react-native-babel-preset": "^0.53.1",
-    "prettier": "^1.16.4",
-    "prettier-tslint": "^0.4.2",
+    "react-native-testing-library": "^1.7.0",
     "react-test-renderer": "16.8.3",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.15.0",
     "tslint-config-prettier": "^1.18.0",
-    "tslint-react": "^3.6.0",
-    "typescript": "^3.3.3333"
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.4.3"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
+      "\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.jest.json"
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$"
   }
 }
