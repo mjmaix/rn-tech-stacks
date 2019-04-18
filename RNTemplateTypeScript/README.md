@@ -1,11 +1,3 @@
-# React Native Template - TypesScript
+# Moved to
 
-## Things that work
-
-* TypeScript support
-
-* React Native Testing Library
-
-* TS config - Jest
-
-* TS config - React.lazy
+[RN Starter](https://github.com/mjmaix/rn-starter)
